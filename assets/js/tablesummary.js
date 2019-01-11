@@ -1,4 +1,4 @@
-class TableData{
+class TableSummary{
 
     readData(data){
 
