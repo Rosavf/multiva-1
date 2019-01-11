@@ -122,9 +122,6 @@
                 <div class="content">
                     <div class="container">
 
-
-
-
                         <div class="row">
                         	<div class="col-sm-12">
                         		<div class="card-box">
@@ -144,7 +141,7 @@
                                                 <div class="form-group">
 	                                                <label class="col-sm-2 control-label">Meses</label>
 	                                                <div class="col-sm-10">
-	                                                    <select class="form-control" id="selectMes">
+	                                                    <select class="form-control" id="selectMonth">
 
 	                                                        <option value = "1">Enero</option>
 	                                                        <option value = "2">Febrero</option>
@@ -165,7 +162,7 @@
                                                 <div class="form-group">
 	                                                <label class="col-sm-2 control-label">Tipo</label>
 	                                                <div class="col-sm-10">
-	                                                    <select class="form-control" id="selectTipo">
+	                                                    <select class="form-control" id="selectType">
 
 	                                                        <option value = "mensual">Mensual</option>
 	                                                        <option value = "acumulado">Acumulado</option>
@@ -183,7 +180,7 @@
 
                                                 <div class="form-group">
 	                                                <div class="col-sm-10">
-                                                        <input class="btn btn-block" type="button" value="RESUMEN" id="btnInforme">
+                                                        <input class="btn btn-block" type="button" value="RESUMEN" id="btnSummary">
 	                                                </div>
                                                 </div>
 
@@ -205,11 +202,7 @@
 
                                     </div>
 
-                        			<h4 class="header-title m-t-0 m-b-30">
-
-                                        TABLA
-
-                                    </h4>
+                        			<h4 class="header-title m-t-0 m-b-30">TABLA</h4>
 
                                     <table id="datatable" class="table table-stripped">
 
@@ -265,29 +258,11 @@
 
         <!-- Developed -->
         <script src="assets/js/conversion.js"></script>
-        <script src="assets/js/formresumen.js"></script>
-        <script src="assets/js/tablereport.js"></script>
-        <script src="assets/js/request.js"></script>
-
+        <script src="assets/js/formsummary.js"></script>
 
         <script>
 
-           $(document).ready(function(){
-
-               $("#btnInforme").click(function(){
-
-                   formResumen=new FormResumen();
-
-                   formResumen.readForm();
-
-                   var url = formResumen.getUrl('http://35.243.156.112/balanza/informe/resumen');
-
-                    var request = new Request(url,'http://35.243.156.112/balanza/informe/resumen',2);
-
-
-               });
-
-            });
+            var requestSummary = new requestSummary();
         
         </script>
 
