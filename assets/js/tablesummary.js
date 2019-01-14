@@ -54,7 +54,11 @@ class TableSummary{
 
         this.dataset.forEach(cluster => {
 
+            let index=0;
+
             cluster.forEach(matrix => {
+
+                
 
                 matrix.forEach(row =>{
 
