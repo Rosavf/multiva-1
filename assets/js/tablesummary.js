@@ -61,7 +61,9 @@ class TableSummary{
 
                 table+='<tr><td>___</td></tr>';
 
-                table+=titles[0];
+                table+=this.titles[index];
+
+                index++
 
                 table+='<tr><td>___</td></tr>';
 
