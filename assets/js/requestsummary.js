@@ -18,7 +18,6 @@ class RequestSummary{
 
         $("#btnSummary").click(function(){
 
-            $(document).ready(function () {
 
                 $.ajax({
             
@@ -39,7 +38,6 @@ class RequestSummary{
                 
             });
 
-        });
         
     }
 

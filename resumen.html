@@ -265,7 +265,11 @@
 
         <script>
 
-            const requestSummary = new RequestSummary("http://35.243.156.112/servicio/balanza/resumen",new FormSummary(),new TableSummary());
+            $(document).ready(function () {
+
+                var requestSummary = new RequestSummary("http://35.243.156.112/servicio/balanza/resumen",new FormSummary(),new TableSummary());
+
+            });
         
         </script>
 
