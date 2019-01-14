@@ -11,8 +11,8 @@ class RequestSummary{
         this.form = form;
         this.form.readForm("#selectType","#selectMonth");
         let params = this.form.getParams();
-        console.log(params);
-        let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
+
+        let reqUrl=rootUrl+"/"+params.type+"/"+params.month;
 
         $("#btnSummary").click(function(){
 
