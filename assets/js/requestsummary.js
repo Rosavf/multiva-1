@@ -9,7 +9,8 @@ class RequestSummary{
     readResponse(rootUrl,form,table){
 
         this.form = form;
-        let params =this.form.readForm("#selectType","#selectMonth");
+        this.form.readForm("#selectType","#selectMonth");
+        let params = this.formgetParams();
         console.log(params);
         let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
