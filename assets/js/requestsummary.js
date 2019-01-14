@@ -3,10 +3,13 @@ class RequestSummary{
     constructor(form,table){
 
         
+
+        
+
         
     }
 
-    readResponse(rootUrl,params){
+    readResponse(rootUrl,form,table){
 
         $(document).ready(function () {
 
