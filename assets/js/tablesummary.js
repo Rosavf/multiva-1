@@ -68,9 +68,23 @@ class TableSummary{
 
                         console.log(cell);
 
-                        table+='<td>';
-                        table+=stdToEng(cell.value);
-                        table+='</td>';
+                        if(i<=1){
+
+                            table+='<td>';
+                            table+=cell.value;
+                            table+='</td>';
+
+                        }
+
+                        else{
+
+                            table+='<td>';
+                            table+=stdToEng(cell.value);
+                            table+='</td>';
+
+                        }
+
+
                         
                     }
                     
