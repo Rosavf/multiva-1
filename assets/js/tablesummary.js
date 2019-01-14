@@ -56,7 +56,6 @@ class TableSummary{
 
             cluster.forEach(matrix => {
 
-
                 matrix.forEach(row =>{
 
                     table+='<tr>';
