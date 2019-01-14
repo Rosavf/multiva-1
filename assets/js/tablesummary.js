@@ -62,9 +62,9 @@ class TableSummary{
 
                 this.headers.forEach(header=>{
 
-                    table+='<td>';
+                    table+='<tr>';
                     table+=header;
-                    table+='</td>';
+                    table+='</tr>';
 
                 });
 
