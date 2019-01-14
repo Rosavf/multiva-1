@@ -2,10 +2,8 @@ class RequestSummary{
 
     constructor(rootUrl,form,table){
 
+        $("#btnSummary").click();
         
-
-        
-
     }
 
     readResponse(rootUrl,form,table){
