@@ -69,7 +69,7 @@ class TableSummary{
                         console.log(cell);
 
                         table+='<td>';
-                        table+='data';
+                        table+=cell.value;
                         table+='</td>';
                         
                     }
