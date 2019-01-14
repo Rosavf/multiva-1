@@ -64,12 +64,9 @@ class TableSummary{
 
                     for (let i = 0; i < row.length; i++) {
 
-                        cell+='';
-
+                        cell=row[i];
                         table+='<td>';
-                        table+='<a>';
-                        table+=row[i];
-                        table+='</a>';
+                        table+='data';
                         table+='</td>';
                         
                     }
