@@ -1,12 +1,11 @@
 class RequestSummary{
 
-    constructor(form,table){
+    constructor(rootUrl,form,table){
 
         
 
         
 
-        
     }
 
     readResponse(rootUrl,form,table){
