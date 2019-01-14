@@ -16,7 +16,6 @@ class RequestSummary{
 
         console.log(reqUrl);
 
-
             $.ajax({
             
                 url:reqUrl,
@@ -31,7 +30,6 @@ class RequestSummary{
                     this.table.writeTable("#datatable");
 
                     this.form.destroy();
-
                     this.table.destroy();
             
                 }
