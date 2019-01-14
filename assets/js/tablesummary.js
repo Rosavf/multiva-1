@@ -3,7 +3,8 @@ class TableSummary{
     readData(data){
 
         this.data=data;
-        this.headers=["CUENTA","CONCEPTO","OPERADORA","BANCO","CASA","GRUPO","SAVELLA","SERVICIOS"];
+        this.titles=["FACTOR HUMANO","GASTOS GENERALES"];
+        this.headers=["CUENTA","CONCEPTO","OPERADORA","BANCO","CASA","GRUPO","SAVELLA","SERVICIOS","TOTAL"];
         this.dataset=[];
 
         if(this.data.length>0){
@@ -59,7 +60,9 @@ class TableSummary{
             cluster.forEach(matrix => {
 
                 table+='<tr><td>___</td></tr>';
-                table+='';
+
+                table+=titles[0];
+
                 table+='<tr><td>___</td></tr>';
 
 
