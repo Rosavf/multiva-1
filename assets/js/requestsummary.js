@@ -10,7 +10,7 @@ class RequestSummary{
 
         this.form = form;
         this.form.readForm("#selectType","#selectMonth");
-        let params = this.formgetParams();
+        let params = this.form.getParams();
         console.log(params);
         let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
