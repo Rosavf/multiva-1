@@ -14,8 +14,6 @@ class RequestSummary{
 
         let reqUrl=rootUrl+"/"+params.type+"/"+params.month;
 
-        console.log(reqUrl);
-
             $.ajax({
             
                 url:reqUrl,
@@ -23,7 +21,6 @@ class RequestSummary{
                 method:"GET",
                 success:function(response){
 
-                    console.log(response);
                     this.table = table;
                     let data = JSON.parse(response);
                     this.table.readData(data);

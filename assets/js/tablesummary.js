@@ -13,6 +13,8 @@ class TableSummary{
 
             this.data.forEach(cluster => {
 
+                console.log(cluster);
+
                 cluster.Super_Conceptos.forEach(matrix =>{
     
                     let square=[]
@@ -60,19 +62,11 @@ class TableSummary{
             cluster.forEach(matrix => {
 
                 table+='<tr><td>___</td></tr>';
-
                 table+='<tr><th>';
-
                 table+=this.titles[index];
-
                 table+='</th></tr>';
-
-
-                index++
-
+                index++;
                 table+='<tr><td>___</td></tr>';
-
-
                 table+='<tr>';
 
                 this.headers.forEach(header=>{
@@ -84,8 +78,6 @@ class TableSummary{
                 });
 
                 table+='</tr>';
-
-
 
                 matrix.forEach(row =>{
 
@@ -127,8 +119,5 @@ class TableSummary{
         $(divId).html(table);
 
     }
-
-
-
 
 }
