@@ -3,7 +3,7 @@ class TableSummary{
     readData(data){
 
         this.data=data;
-        this.headers=[];
+        this.headers=["CUENTA","CONCEPTO",];
         this.dataset=[];
 
         if(this.data.length>0){
@@ -69,7 +69,7 @@ class TableSummary{
                         console.log(cell);
 
                         table+='<td>';
-                        table+=cell.value;
+                        table+=stdToEng(cell.value);
                         table+='</td>';
                         
                     }
