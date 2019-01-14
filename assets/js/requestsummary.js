@@ -2,33 +2,38 @@ class RequestSummary{
 
     constructor(rootUrl,form,table){
 
-        $("#btnSummary").click();
+
         
+
     }
 
     readResponse(rootUrl,form,table){
 
-        $(document).ready(function () {
+        let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
-            $.ajax({
-        
-                url:"back.php",
-                data:"",
-                method:"GET",
-                success:function(response){
-        
-                    let data = JSON.parse(response);
-                    this.table.readData(data);
-                    this.table.writeTable("#table");
-        
-                }
-        
-            });
+        $("#btnSummary").click(function(){
+
+            $(document).ready(function () {
+
+                $.ajax({
             
+                    url:"back.php",
+                    data:"",
+                    method:"GET",
+                    success:function(response){
+            
+                        let data = JSON.parse(response);
+                        this.table.readData(data);
+                        this.table.writeTable("#table");
+            
+                    }
+            
+                });
+                
+            });
+
         });
-
+        
     }
-
-    
 
 }
