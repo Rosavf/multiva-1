@@ -3,7 +3,7 @@ class RequestSummary{
     constructor(rootUrl,form,table){
 
 
-        
+
 
     }
 
@@ -17,7 +17,7 @@ class RequestSummary{
 
                 $.ajax({
             
-                    url:"back.php",
+                    url:requrl,
                     data:"",
                     method:"GET",
                     success:function(response){
