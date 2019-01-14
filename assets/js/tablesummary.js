@@ -58,6 +58,11 @@ class TableSummary{
 
             cluster.forEach(matrix => {
 
+                table+='<tr><td></td></tr>';
+                table+='';
+                table+='<tr><td></td></tr>';
+
+
                 table+='<tr>';
 
                 this.headers.forEach(header=>{
@@ -68,7 +73,9 @@ class TableSummary{
 
                 });
 
-                table+='</tr>'
+                table+='</tr>';
+
+
 
                 matrix.forEach(row =>{
 

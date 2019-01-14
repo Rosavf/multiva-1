@@ -28,9 +28,6 @@ class RequestSummary{
                     let data = JSON.parse(response);
                     this.table.readData(data);
                     this.table.writeTable("#datatable");
-
-                    this.form.destroy();
-                    this.table.destroy();
             
                 }
             
