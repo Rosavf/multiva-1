@@ -9,7 +9,6 @@ class RequestSummary{
     readResponse(rootUrl,form,table){
 
         this.form = form;
-        this.table = table;
         let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
         $("#btnSummary").click(function(){
@@ -24,6 +23,8 @@ class RequestSummary{
                     success:function(response){
 
                         console.log(response);
+
+                        this.table = table;
 
                         let data = JSON.parse(response);
                         this.table.readData(data);
