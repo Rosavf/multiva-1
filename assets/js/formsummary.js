@@ -1,5 +1,11 @@
 class FormSummary{
 
+    constructor(){
+
+        
+
+    }
+
     readForm(typeId,monthId){
 
         this.params = {

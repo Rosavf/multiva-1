@@ -4,16 +4,12 @@ class RequestSummary{
 
         this.readResponse(rootUrl,form,table);
 
-
-
     }
 
     readResponse(rootUrl,form,table){
 
         let form = form;
-
         let table = table;
-
         let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
         $("#btnSummary").click(function(){
@@ -28,8 +24,8 @@ class RequestSummary{
                     success:function(response){
             
                         let data = JSON.parse(response);
-                        this.table.readData(data);
-                        this.table.writeTable("#table");
+                        table.readData(data);
+                        table.writeTable("#table");
             
                     }
             
