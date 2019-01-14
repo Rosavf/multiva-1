@@ -23,12 +23,10 @@ class RequestSummary{
                     success:function(response){
 
                         console.log(response);
-
                         this.table = table;
-
                         let data = JSON.parse(response);
                         this.table.readData(data);
-                        this.table.writeTable("#sumTable");
+                        this.table.writeTable("#datatable");
             
                     }
             
