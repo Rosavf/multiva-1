@@ -18,25 +18,24 @@ class RequestSummary{
 
         $("#btnSummary").click(function(){
 
+            $.ajax({
+            
+                url:reqUrl,
+                data:"",
+                method:"GET",
+                success:function(response){
 
-                $.ajax({
+                    console.log(response);
+                    this.table = table;
+                    let data = JSON.parse(response);
+                    this.table.readData(data);
+                    this.table.writeTable("#datatable");
             
-                    url:reqUrl,
-                    data:"",
-                    method:"GET",
-                    success:function(response){
-
-                        console.log(response);
-                        this.table = table;
-                        let data = JSON.parse(response);
-                        this.table.readData(data);
-                        this.table.writeTable("#datatable");
+                }
             
-                    }
-            
-                });
-                
             });
+                
+        });
 
         
     }
