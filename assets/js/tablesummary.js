@@ -61,7 +61,12 @@ class TableSummary{
 
                 table+='<tr><td>___</td></tr>';
 
+                table+='<tr><th>';
+
                 table+=this.titles[index];
+
+                table+='</th></tr>';
+
 
                 index++
 
@@ -89,8 +94,6 @@ class TableSummary{
                     for (let i = 0; i < row.length; i++) {
 
                         let cell=row[i];
-
-                        console.log(cell);
 
                         if(i<=1){
 
