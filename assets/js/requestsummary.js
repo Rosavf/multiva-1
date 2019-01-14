@@ -28,7 +28,7 @@ class RequestSummary{
 
                         let data = JSON.parse(response);
                         this.table.readData(data);
-                        this.table.writeTable("#table");
+                        this.table.writeTable("#datatable");
             
                     }
             
