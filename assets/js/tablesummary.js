@@ -56,7 +56,6 @@ class TableSummary{
 
             cluster.forEach(matrix => {
 
-                table+='<table id="datatable" class="table table-stripped">';
 
                 matrix.forEach(row =>{
 
@@ -92,7 +91,6 @@ class TableSummary{
 
                 });
 
-                table+='<table>';
 
             });
             
