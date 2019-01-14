@@ -16,7 +16,6 @@ class RequestSummary{
 
         console.log(reqUrl);
 
-        $("#btnSummary").click(function(){
 
             $.ajax({
             
