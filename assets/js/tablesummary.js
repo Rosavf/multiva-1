@@ -58,7 +58,17 @@ class TableSummary{
 
             cluster.forEach(matrix => {
 
+                table+='<tr>';
 
+                this.headers.forEach(header=>{
+
+                    table+='<td>';
+                    table+=header;
+                    table+='</td>';
+
+                });
+
+                table+='</tr>'
 
                 matrix.forEach(row =>{
 
