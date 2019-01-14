@@ -2,12 +2,17 @@ class RequestSummary{
 
     constructor(rootUrl,form,table){
 
+        this.readResponse(rootUrl,form,table);
 
 
 
     }
 
     readResponse(rootUrl,form,table){
+
+        let form = form;
+
+        let table = table;
 
         let reqUrl=rootUrl+"/"+"mensual"+"/"+"3"
 
@@ -17,7 +22,7 @@ class RequestSummary{
 
                 $.ajax({
             
-                    url:requrl,
+                    url:reqUrl,
                     data:"",
                     method:"GET",
                     success:function(response){
