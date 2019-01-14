@@ -64,7 +64,7 @@ class TableSummary{
 
                     for (let i = 0; i < row.length; i++) {
 
-                        cell=row[i];
+                        let cell=row[i];
 
                         console.log(cell);
 
