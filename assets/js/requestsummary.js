@@ -14,6 +14,8 @@ class RequestSummary{
 
         let reqUrl=rootUrl+"/"+params.type+"/"+params.month;
 
+        console.log(reqUrl);
+
         $("#btnSummary").click(function(){
 
             $(document).ready(function () {
