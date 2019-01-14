@@ -22,7 +22,9 @@ class RequestSummary{
                     data:"",
                     method:"GET",
                     success:function(response){
-            
+
+                        console.log(response);
+
                         let data = JSON.parse(response);
                         this.table.readData(data);
                         this.table.writeTable("#table");
