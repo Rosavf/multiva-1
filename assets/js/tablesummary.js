@@ -65,6 +65,9 @@ class TableSummary{
                     for (let i = 0; i < row.length; i++) {
 
                         cell=row[i];
+
+                        console.log(cell);
+
                         table+='<td>';
                         table+='data';
                         table+='</td>';
